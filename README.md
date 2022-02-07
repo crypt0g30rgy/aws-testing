@@ -1,6 +1,8 @@
 # cognitocreds.py
 A python script for testing Aws Cognito IdentityPoolId.
 
+https://github.com/g30rgyth3d4rk/enumerate-iam
+
 #Installation
 Clone this repo; 
               
