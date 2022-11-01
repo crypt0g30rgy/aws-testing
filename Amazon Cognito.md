@@ -1,7 +1,7 @@
 ## Test Unauth Creds Grant
 
 ### Get IdentityID
-
+```
 POST / HTTP/2
 Host: cognito-identity.eu-west-1.amazonaws.com
 Content-Length: 67
@@ -17,9 +17,9 @@ Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9
 
 {"IdentityPoolId":""}
-
+````
 ### Exchange IdentityId for AWS keys
-
+```
 POST / HTTP/2
 Host: cognito-identity.eu-west-1.amazonaws.com
 Content-Length: 63
@@ -35,9 +35,9 @@ Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9
 
 {"IdentityId":""}
-
+```
 ### Exchange JWT for AWS keys
-
+```
 POST / HTTP/2
 Host: cognito-identity.eu-west-1.amazonaws.com
 Content-Length: 63
@@ -53,10 +53,11 @@ Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9
 
 {"Logins":{"cognito-identity.eu-west-1.amazonaws.com/eu-west-1_PoolID":"JWT token"},"IdentityId":""}
-
+```
 ## Test SignUp
 
 ### register
+```
 POST / HTTP/2
 Host: cognito-idp.eu-west-1.amazonaws.com
 Referer: https://www.
@@ -67,9 +68,9 @@ Origin: https://www.
 Content-Length: 36
 
 {"ClientId":"","Username":"","Password":"","UserAttributes":[{"Name":"email","Value":""},{"Name":"name","Value":""}]}
-
+```
 ### confirmation
-
+```
 POST / HTTP/2
 Host: cognito-idp.eu-west-1.amazonaws.com
 Referer: https://www.
@@ -80,9 +81,9 @@ Origin: https://www.
 Content-Length: 36
 
 {"ClientId":"","Username":"","ConfirmationCode":""}
-
+```
 ### Login
-
+```
 POST / HTTP/2
 Host: cognito-idp.eu-west-1.amazonaws.com
 Referer: https://www.
@@ -100,4 +101,4 @@ Content-Length: 204
    "AuthFlow" : "USER_PASSWORD_AUTH",
    "ClientId" : ""
 }
-
+```
