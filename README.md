@@ -31,6 +31,10 @@ i.e
 aws --profile test s3 ls
 ``
 
+# Escalating For Profit
+
+  https://github.com/RhinoSecurityLabs/Security-Research/tree/master/tools/aws-pentest-tools
+
 # cognitocreds.py
 A python script for testing Aws Cognito IdentityPoolId.
 
