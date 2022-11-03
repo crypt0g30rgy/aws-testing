@@ -8,6 +8,9 @@
 ### Remove from bucket
 ``aws s3 rm s3://*bucket*/test.txt``
 
+### Search for a File
+``aws s3 ls s3://your-bucket --recursive | grep your-search | cut -c 32-``
+
 ### Check bucket Size
 ``aws s3 ls --summarize --human-readable --recursive s3://*bucket*``
 
