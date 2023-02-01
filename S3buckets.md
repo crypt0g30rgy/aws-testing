@@ -6,6 +6,9 @@
 ### Upload PoC with Public Read
 ``aws s3 cp crypt0g30rgy.html s3://crypt0g30rgy --acl public-read``
 
+### Delete Bucket with Content
+``aws s3 rb s3://crypt0g30rgy –force``
+
 ### List bucket
 ``aws s3 ls s3://*bucket*``
 
