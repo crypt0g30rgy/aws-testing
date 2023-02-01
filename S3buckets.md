@@ -1,4 +1,11 @@
 ## Pentesting an s3 Bucket
+
+### Create Bucket
+``aws s3api create-bucket --bucket crypt0g30rgy --region us-east-1``
+
+### Upload PoC with Public Read
+``aws s3 cp crypt0g30rgy.html s3://crypt0g30rgy --acl public-read``
+
 ### List bucket
 ``aws s3 ls s3://*bucket*``
 
